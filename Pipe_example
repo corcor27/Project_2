@@ -1,9 +1,37 @@
- %%% dT/dt = d^2T/dx^2 - Partial derivatives
- %%%% T = temperature = f(x,t)
- %%% time derivative = second spatial derviative
- %%% ( T(x, t+dt) - T(x,t) )  / dt = k*( T(x+dx, t) - 2*T(x,t) + T(x-1,t) ) / dx^2
- %%% Propergation this system in time 
- %%%% Solve for T(x,t+dt) = T(x,t) + k*dt/dx^2 * (T(x+dx,t) - 2*T(x,t)
- %%%% T(x-1,t) 
- 
- 
+%%% dT/dt = d^2T/dx^2 - Partial derivatives
+%%%% T = temperature = f(x,t)
+%%% time derivative = second spatial derviative
+%%% ( T(x, t+dt) - T(x,t) )  / dt = k*( T(x+dx, t) - 2*T(x,t) + T(x-1,t) ) / dx^2
+%%% Propergation this system in time 
+%%%% Solve for T(x,t+dt) = T(x,t) + k*dt/dx^2 * (T(x+dx,t) - 2*T(x,t)
+
+%%%% Heat constant - Heat capacitance
+k = 2;
+%%%% Length of pipe
+L = 10;
+%%%% Number of Elements
+N = 10;
+%%%% Discretize our Xspace
+x_vector = linspace(0,L,N); %%%% start at 0, increment to L and the length of vector is N 
+dx = x_vextor(2) - x_vector(1); %%%% consequence of the linspace command 
+
+%%% Discretize time
+dt = 0.5*(dx^2)/(2*k)
+t_vector 0:dt:10;
+
+%%%% Allocate memory for temp
+T_material = Zeros(length(x_vector),length(t_vector));
+
+%%% Intial conditions for temperature of the pipe 
+T_mat(1,:) = 200;  %%%%% the left side of the pipe is 200 degrees
+T_mat(end,:) 150;  %%%% the right side of the pipe is 150 degrees
+
+%%%% Intergrate using Euler's and FDM put together
+
+%%%% Plot this 
+[tt,xx] = meshgrid(t_vector, x_vector):
+
+mesh(xx,tt,T_mat)
+xlabel('X coordinate (m)')
+ylabel('T (sec)')
+zlabel('Temperature (F)')
