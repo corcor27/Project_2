@@ -1,4 +1,4 @@
 import xlrd
 workbook = xlrd.open_workbook('private-motor-insurance-statistics-2015-appendix-3-4.xlsx')
-value_1 = sheet.cell(0, 0).value
+value_1 = sheet.cell(5, 6).value
 print "value_1"
