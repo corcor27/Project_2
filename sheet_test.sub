@@ -1,10 +1,3 @@
-import pandas as pd
-
-table = pd.read_excel('private-motor-insurance-statistics-2015-appendix-3-4.xlsx',
-                  sheetname = 'Month 1',
-                  header = 0,
-                  index_col = 0,
-                  parse_cols = "A, C, G",
-                  convert_float = True)
-
-print(table)
+from openpyxl import load_workbook
+wb = load_workbook('./test.xlsx')
+print(wb.get_sheet_names())
