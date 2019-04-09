@@ -7,5 +7,13 @@ sheet.nrows # number of rows
 sheet.ncols # number of colums
 #for col in range(sheet.ncols):
    #print sheet.cell_value(3, col)
-data = [[sheet.cell_value(r,c) for c in range(sheet.ncols)] for r in range (sheet.nrows)]
-print data[3][1]
+# data = [[sheet.cell_value(r,c) for c in range(sheet.ncols)] for r in range (sheet.nrows)]
+
+def row_values()
+   sheet.nrows # number of rows
+   sheet.ncols # number of colums
+   data = [[sheet.cell_value(r,c) for c in range(sheet.ncols)] for r in range (sheet.nrows)]  
+
+
+
+print data[3,5][1]
