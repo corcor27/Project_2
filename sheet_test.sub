@@ -1,2 +1,4 @@
 import xlrd
-file_location = "/home/mint/project_2/"
+file_location = "/home/mint/project_2/private-motor-insurance-statistics-2015-appendix-3-4.xlsx"
+workbook = xlrd.open_wookbook(file_location)
+sheet = wookbook.sheet_by_index(0)
