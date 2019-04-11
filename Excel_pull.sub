@@ -6,4 +6,6 @@ data = [sheet.cell_value(r,1) for r in range (3,26)]
 list_len = len(data)
 data1 = sum(data)
 mean = data1 / list_len
+print data1
+print list_len
 print mean
