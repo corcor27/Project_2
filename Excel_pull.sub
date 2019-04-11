@@ -3,6 +3,7 @@ file_location = "/home/mint/project_2/private-motor-insurance-statistics-2015-ap
 workbook = xlrd.open_workbook(file_location) # open excel file
 sheet = workbook.sheet_by_index(0)  # which sheet of excel file with the first being 0 or 
 data = [sheet.cell_value(r,1) for r in range (3,26)]
+list_len = len(data)
 data1 = sum(data)
-
-print data1
+mean = data1 / list_len
+print mean
