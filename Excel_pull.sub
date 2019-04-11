@@ -9,3 +9,5 @@ mean = data1 / list_len
 print data1
 print list_len
 print mean
+data2 = data [::2]
+print data2
