@@ -13,7 +13,7 @@ data = [sheet.cell_value(r,1) for r in range (3,26)]
 #data3 = [sheet.cell_value(r,1) for r in range (3,26)]
 
 #Range = [17 to 20, 21 to 24, 25 to 30, 31 to 50, 51 to 70, over 70]
-Female_pro = data [::2]
+Female_pro = data [::4]
 #Female-full = 
 #Male-pro = 
 #Male-full = 
