@@ -1,13 +1,27 @@
 import xlrd
+import matplotlib.pyplot as plt
+
 file_location = "/home/mint/project_2/private-motor-insurance-statistics-2015-appendix-3-4.xlsx"  # file location
 workbook = xlrd.open_workbook(file_location) # open excel file
-sheet = workbook.sheet_by_index(0)  # which sheet of excel file with the first being 0 or 1
-# r3_c1 = sheet.cell_value(r,c) # select the (row,coloum) to read
-#sheet.nrows # number of rows 
-#sheet.ncols # number of colums
-#for col in range(sheet.ncols):
-   #print sheet.cell_value(3, col)
-data = [[sheet.cell_value(r,c) for c in range(2,3)] for r in range (3,26)]
+sheet = workbook.sheet_by_index(0)  # which sheet of excel file with the first being 0 or 
+data = [sheet.cell_value(r,1) for r in range (3,26)]
+list_len = len(data)
+data1 = sum(data)
+mean = data1 / list_len
+print data1
+print list_len
+print mean
+data2 = data [::2]
+print data2
 
-#values = [sheet.col_values(c) for c in range(3, 26)]
-print data
+Range = [17 to 20, 21 to 24, 25 to 30, 31 to 50, 51 to 70, over 70]
+
+
+plt.plot(Range, a, linewidth=2,linestyle='dashed',color='g', label = 'M70_q6_spin1x=0.5')
+plt.plot(Range, b, linewidth=2,linestyle='dashed',color='b', label = 'M80_q7_spin1x=0.5')
+plt.plot(Range, c, linewidth=2,linestyle='dashed',color='r', label = 'M90_q8_spin1x=0.5')
+
+
+plt.xlabel('Inclination (degrees)')
+plt.ylabel('Percentage error')
+plt.title("Estimation of chi_p with varying inclination")
