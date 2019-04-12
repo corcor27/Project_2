@@ -1,5 +1,5 @@
 import xlrd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 file_location = "/home/mint/project_2/private-motor-insurance-statistics-2015-appendix-3-4.xlsx"  # file location
 workbook = xlrd.open_workbook(file_location) # open excel file
