@@ -14,9 +14,9 @@ data3 = [sheet.cell_value(r,1) for r in range (3,26)]
 
 #Range = [17 to 20, 21 to 24, 25 to 30, 31 to 50, 51 to 70, over 70]
 Female-pro = data [::4]
-Female-full = 
-Male-pro = 
-Male-full = 
+#Female-full = 
+#Male-pro = 
+#Male-full = 
 
 
 plt.plot(Range, a, linewidth=2,linestyle='dashed',color='g', label = 'M70_q6_spin1x=0.5')
