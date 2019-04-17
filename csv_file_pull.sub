@@ -1,5 +1,5 @@
 import csv
-with open(car.csv') as file:
+with open('car.csv') as file:
   reader = csv.DictReader(file)
   for row in data:
       print (row['numclaims'])
