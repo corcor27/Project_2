@@ -1,4 +1,5 @@
 import csv
 import pandas as pd
-pd.read_csv('car.csv', header=None, nrows=5)
-pd.to_csv('car1.csv')
+pd.read_csv('car.csv', )
+data = pd.ix[2]
+print (data)
