@@ -1,5 +1,14 @@
 import csv
-import pandas as pd
-pd.read_csv('car.csv', )
-pd.ix[2]
-print 
+
+with open('car.csv') as csvfile:
+  readcsv = csv.reader(csvfile, delimiter = ',')
+  dates = []
+  colours = []
+  for row in readcsv:
+    colour = row[3]
+    date = row[0]
+  
+    dates.append(date)
+    colours.append(colour)
+ print (dates)
+ print (colours)
