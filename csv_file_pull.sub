@@ -2,13 +2,10 @@ import csv
 
 with open('car.csv') as csvfile:
   readcsv = csv.reader(csvfile, delimiter = ',')
-  dates = []
-  colours = []
+  numclaims = []
   for row in readcsv:
-    colour = row[3]
-    date = row[0]
+    claims = row[3]
   
-    dates.append(date)
-    colours.append(colour)
-  print (dates)
-  print (colours)
+    numclaims.append(claims)
+    
+  print (numclaims)
