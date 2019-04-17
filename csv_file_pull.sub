@@ -1,5 +1,6 @@
-import pandas as pd
-data = pd.read_csv("car.csv")
-for row in data:
-  print (row['numclaims'])
+import csv
+with open(car.csv') as file:
+  reader = csv.DictReader(file)
+  for row in data:
+      print (row['numclaims'])
 
