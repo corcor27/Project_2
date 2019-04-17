@@ -4,5 +4,5 @@ with open('car.csv') as file:
   reader = csv.DictReader(file)
   for row in reader:
       data = (row['numclaims'])
-data1 = df.mean(data)
+data1 = pd.mean(data)
 
