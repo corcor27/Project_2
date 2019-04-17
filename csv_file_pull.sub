@@ -7,6 +7,5 @@ with open('car.csv') as csvfile:
     claims = row[3]
   
     numclaims.append(claims)
-    numclaims.remove(claims)
-    
+  numclaims [0] = '0'
   print (numclaims)
