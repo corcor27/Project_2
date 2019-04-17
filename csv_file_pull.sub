@@ -1,8 +1,4 @@
 import csv
 import pandas as pd
-with open('car.csv') as file:
-  reader = csv.DictReader(file)
-  for row in reader:
-      data = (row['numclaims'])
-data1 = pd.mean(data)
-
+pd.read_csv('car.csv', header=None, nrows=5)
+pd.to_csv('car1.csv.csv')
