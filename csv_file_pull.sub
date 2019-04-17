@@ -10,5 +10,5 @@ with open('car.csv') as csvfile:
   
     dates.append(date)
     colours.append(colour)
-   print (dates)
-   print (colours)
+  print (dates)
+  print (colours)
