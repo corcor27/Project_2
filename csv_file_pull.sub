@@ -1,4 +1,5 @@
 import pandas as pd
-data = pd.read_csv("car.csv", skiprows = 1)
-
+data = pd.read_csv("car.csv",num )
+for row in data:
+  print (row['numclaims'))
 print data
