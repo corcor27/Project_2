@@ -1,7 +1,5 @@
 
-from __future__ import division
-
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 
 a = [63233, 4333, 271, 18, 2]
