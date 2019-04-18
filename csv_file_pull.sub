@@ -1,4 +1,5 @@
 import csv
+from collections import Counter
 
 with open('car.csv') as csvfile:
   readcsv = csv.reader(csvfile, delimiter = ',')
@@ -8,4 +9,6 @@ with open('car.csv') as csvfile:
   
     numclaims.append(claims)
   numclaims [0] = '0'
-  print (numclaims)
+  res = Counter(numberclaims)
+  print (res)
+ 
