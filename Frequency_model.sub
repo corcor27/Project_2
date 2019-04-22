@@ -22,7 +22,7 @@ def claim_frequency_values():
     return claim_frequency
 
 
-claim_vlaues = [0,1,2,3,4]  
+claim_values = [0,1,2,3,4]  
 claimed_frequency = claim_frequency_values()
 print (claimed_frequency)
 print (claim_values) 
