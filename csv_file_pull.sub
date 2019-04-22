@@ -2,7 +2,7 @@ import csv
 from collections import Counter
 
 with open('car.csv') as csvfile:
-  readcsv = csv.reader(csvfile, delimiter = ',')
+  readcsv = csv.reader(csvfile, delimiter = ,)
   numclaims = []
   for row in readcsv:
     claims = row[3]
