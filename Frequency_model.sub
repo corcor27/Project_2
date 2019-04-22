@@ -1,0 +1,17 @@
+import csv
+from collections import Counter
+
+with open('car.csv') as csvfile:
+  readcsv = csv.reader(csvfile, delimiter = ',')
+  numclaims = []
+  for row in readcsv:
+    claims = row[3]
+  
+    numclaims.append(claims)
+  numclaims [0] = '0'
+  
+  res = numclaims.count('0')
+  print (res)
+  
+
+ 
