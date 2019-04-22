@@ -4,14 +4,14 @@ from collections import Counter
 
 
 def claim_frequency_values():
-  with open('car.csv') as csvfile:
-    readcsv = csv.reader(csvfile, delimiter = ',')
+  with open('car.csv') as csvfile:   # open csv file
+    readcsv = csv.reader(csvfile, delimiter = ',') # read file 
     numclaims = []
     for row in readcsv:
-      claims = row[3]
+      claims = row[3] #what row/column to read from file
   
       numclaims.append(claims)
-    numclaims [0] = '0'
+    numclaims [0] = '0' # ignore first elememt of list
   
     claim_zero = numclaims.count('0')
     claim_one = numclaims.count('1')
@@ -20,7 +20,7 @@ def claim_frequency_values():
     claim_four = numclaims.count('4')
     claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
     return claim_frequency
-  
+claim_vlaues = [0,1,2,3,4]  
 claimed_frequency = claim_frequency_values()
 print (claimed_frequency)
  
