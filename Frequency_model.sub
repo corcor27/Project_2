@@ -16,7 +16,7 @@ with open('car.csv') as csvfile:
   claim_three = numclaims.count('3')
   claim_four = numclaims.count('4')
   claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
-  print (claim frequency)
+  print (claim_frequency)
   
 
  
