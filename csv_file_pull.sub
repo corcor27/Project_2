@@ -9,7 +9,7 @@ with open('car.csv') as csvfile:
   
     numclaims.append(claims)
   numclaims [0] = '0'
-  x = numclaims.count(0)
+  x = numclaims.count(1)
   print (x)
   #res = Counter(numclaims)
   #print (res)
