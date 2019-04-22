@@ -3,7 +3,7 @@ from collections import Counter
 
 
 
-def claim_frequency_values:
+def claim_frequency_values():
   with open('car.csv') as csvfile:
     readcsv = csv.reader(csvfile, delimiter = ',')
     numclaims = []
