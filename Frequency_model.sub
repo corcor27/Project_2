@@ -20,7 +20,9 @@ def claim_frequency_values():
     claim_four = numclaims.count('4')
     claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
     return claim_frequency
+
+
 claim_vlaues = [0,1,2,3,4]  
 claimed_frequency = claim_frequency_values()
 print (claimed_frequency)
- 
+print (claim_values) 
