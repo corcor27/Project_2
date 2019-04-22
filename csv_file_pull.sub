@@ -11,5 +11,8 @@ with open('car.csv') as csvfile:
   numclaims [0] = '0'
   res = Counter(numclaims)
   print (res)
+  res1 = res.count("0")
+  print (res)
+  
  
 # calculates the number of values in a list, A(0) = 63233, B(1) = 4333, C(2) = 271, D(3) = 18, E(4) = 2
