@@ -21,5 +21,6 @@ def claim_frequency_values():
     claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
     return claim_frequency
   
-print (claim_frequency_values)
+claimed_frequency = claim_frequency_values()
+print (claimed_frequency)
  
