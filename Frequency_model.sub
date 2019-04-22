@@ -1,22 +1,25 @@
 import csv
 from collections import Counter
 
-with open('car.csv') as csvfile:
-  readcsv = csv.reader(csvfile, delimiter = ',')
-  numclaims = []
-  for row in readcsv:
-    claims = row[3]
-  
-    numclaims.append(claims)
-  numclaims [0] = '0'
-  
-  claim_zero = numclaims.count('0')
-  claim_one = numclaims.count('1')
-  claim_two = numclaims.count('2')
-  claim_three = numclaims.count('3')
-  claim_four = numclaims.count('4')
-  claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
-  print (claim_frequency)
-  
 
+
+def claim_frequency_values:
+  with open('car.csv') as csvfile:
+    readcsv = csv.reader(csvfile, delimiter = ',')
+    numclaims = []
+    for row in readcsv:
+      claims = row[3]
+  
+      numclaims.append(claims)
+    numclaims [0] = '0'
+  
+    claim_zero = numclaims.count('0')
+    claim_one = numclaims.count('1')
+    claim_two = numclaims.count('2')
+    claim_three = numclaims.count('3')
+    claim_four = numclaims.count('4')
+    claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
+    return claim_frequency
+  
+print (claim_frequency)
  
