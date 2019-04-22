@@ -10,8 +10,13 @@ with open('car.csv') as csvfile:
     numclaims.append(claims)
   numclaims [0] = '0'
   
-  res = numclaims.count('0')
-  print (res)
+  claim_zero = numclaims.count('0')
+  claim_one = numclaims.count('1')
+  claim_two = numclaims.count('2')
+  claim_three = numclaims.count('3')
+  claim_four = numclaims.count('4')
+  claim_frequency = [claim_zero, claim_one, claim_two, claim_three, claim_four]
+  print (claim frequency)
   
 
  
